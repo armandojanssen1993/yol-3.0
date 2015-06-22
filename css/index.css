@@ -1,0 +1,300 @@
+html{
+    width: 100%;
+}
+
+body
+{
+    background: url(../img/body/2014-12-30%2012.05.54-2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
+
+
+.wrapper
+{
+    min-height: 100%;
+    position: relative;
+}
+
+header h1
+{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    color: ghostwhite;
+    font-size: 300%;
+
+
+}
+
+.navbar
+{
+    background-color: green;
+    font-family: 'Poiret One', cursive;
+}
+
+
+
+
+.navbar ul li a
+{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition-duration: 0.6s;
+}
+
+.btn-active
+{
+    background-color: darkgreen;
+}
+
+
+.navbar ul li a:hover
+{
+    background-color: darkgreen;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    /*border-radius: 50%;*/
+}
+
+.navbar ul ul li
+{
+    display: none;
+    position: relative;
+    transition: 0.7s;
+    width: 100%;
+    background-color: green;
+
+}
+
+.navbar ul li:hover ul li
+{
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.right
+{
+    float: right !important;
+}
+
+.relative
+{
+    position: relative;
+}
+.absolute
+{
+    position: absolute;
+}
+
+.unit-100
+{
+    background: #EEEEEE;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px;
+    border-radius: 10px;
+    position: relative;
+    padding-bottom: 2%;
+}
+
+.unit-100 h2{
+    padding-left: 10%;
+}
+
+.unit-100 p{
+    padding-left: 10%;
+    /*padding-right: 42%;*/
+}
+
+
+/*DEZE DIV CSS IS OVERBODIG*/
+#profilepicdiv{
+
+
+}
+
+/*ALLES KAN HIER IN NU HEB JE DE NORMALE WEBSITE WEER TERUG*/
+#profilepic{
+    width: 15%;
+    height: 15%;
+    border-radius: 100px;
+    position: relative;
+    left: 95%;
+    bottom: 10%;
+}
+
+footer
+{
+    background-color: darkgreen;
+    margin: 0;
+    /*Test gebeuren*/
+    width:100%;
+    height:40px;
+    position: fixed;
+    bottom:0;
+    left:0;
+    z-index: 2;
+    text-align: center;
+}
+
+
+.slicknav_menu {
+    display:none;
+}
+
+@media screen and (max-width:  /*40em*/ 768px)
+{
+
+
+    body{
+            width: 100% !important;
+    }
+    /* #menu is the original menu */
+    .navbar{
+        position: absolute !important;
+    }
+
+    .navbar-pills{
+        padding: 0 !important;
+        display: none !important;
+    }
+
+    .navbar-left
+    {
+        display:none;
+    }
+
+    .btn-active
+    {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    .slicknav_menu .absolute.wp-submenu
+    {
+        position: relative;
+    }
+
+    .slicknav_menu
+    {
+        display:block;
+        background: green !important;
+    }
+
+
+
+    .slicknav_menutxt
+    {
+        color: green !important;
+    }
+    .slicknav_menu .slicknav_icon-bar{
+        background-color: green !important;
+    }
+    .slicknav_btn{
+        float: left !important;
+    }
+    footer{
+        z-index: 2;
+    }
+
+}
+
+
+/*Tijdelijke "under constuction CSS voor content page*/
+
+.construction{
+    border: solid 1px black;
+    width: 20%;
+    height: 67%;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute;
+}
+
+.construction img{
+    width: 30%;
+    height: 50%;
+}
+
+.construction h1{
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    bottom: 110px;
+    left: 30%;
+    width: 70%;
+    font-weight: bold;
+
+}
+
+.construction p{
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+
+}
+/*Ipad*/
+@media screen and (max-width:  /*40em*/ 768px){
+    .construction{
+        position: fixed;
+        top:  575px;
+        left:  20%;
+        width: 60%;
+    }
+    .construction p{
+        bottom: 80px;
+    }
+}
+/*Iphone 5*/
+@media screen and (max-width:  /*40em*/ 320px){
+
+
+    .construction{
+        margin-top: -20%;
+        position: static;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 20%;
+    }
+
+    .construction h1{
+        font-size: 12px;
+        text-align: center;
+        position: relative;
+        bottom: 40px;
+        left: 50px;
+        width: 70%;
+        font-weight: bold;
+    }
+
+    .construction p{
+        display: none;
+    }
+
+    .unit-100 p{
+        width: 100%;
+        padding-right: 0px;
+
+    }
+
+    #profilepicdiv img{
+        height: 75px;
+        width: 75px;
+        position: relative;
+        right: 125px;
+    }
+
+    .unit-100{
+        top: -50px;
+
+    }
+}

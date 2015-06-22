@@ -1,0 +1,34 @@
+.fotogallerij{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 50%;
+    border: 1px solid black;
+    background: darkgrey;
+    opacity: 1;
+}
+
+img{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.foto{
+    display: inline-block;
+    padding: 5px;
+}
+
+.aside ul{
+    list-style: none;
+}
+
+.aside ul li{
+    padding-top: 15px;
+}
+
+.aside a{
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+}
